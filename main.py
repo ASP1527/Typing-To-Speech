@@ -19,6 +19,6 @@ while not ended:
     text = text.lower()
     if text == "end":
         ended = True
-    if text != "" and not ended:
+    elif text != "":
         speak(text)
         os.remove('voice.mp3')
